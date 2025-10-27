@@ -58,218 +58,26 @@
     <!-- Theme Custom CSS -->
     <link rel="stylesheet" href="assets/css/style.css">
 <!-- Add this CSS for new components -->
-<style>
-/* New Visa-Focused Styles */
-.visa-hero-section {
-    background: linear-gradient(135deg, #2563EB 0%, #1E40AF 100%);
-    color: white;
-    padding: 100px 0;
-    position: relative;
-    overflow: hidden;
-}
-
-.visa-hero-content {
-    position: relative;
-    z-index: 2;
-}
-
-.trust-badges {
-    display: flex;
-    gap: 30px;
-    margin-top: 40px;
-    flex-wrap: wrap;
-}
-
-.trust-badge {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    font-size: 14px;
-}
-
-.how-it-works-section {
-    background: #f8fafc;
-    padding: 80px 0;
-}
-
-.process-steps {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 30px;
-    margin-top: 50px;
-}
-
-.process-step {
-    background: white;
-    padding: 40px 30px;
-    border-radius: 12px;
-    text-align: center;
-    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
-    border: 1px solid #e2e8f0;
-    position: relative;
-}
-
-.step-number {
-    width: 50px;
-    height: 50px;
-    background: #2563EB;
-    color: white;
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-weight: bold;
-    font-size: 20px;
-    margin: 0 auto 20px;
-}
-
-.visa-assessment-form {
-    background: white;
-    padding: 40px;
-    border-radius: 12px;
-    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
-    margin-top: 30px;
-}
-
-.form-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 20px;
-    margin-bottom: 25px;
-}
-
-.form-group {
-    margin-bottom: 20px;
-}
-
-.form-group label {
-    display: block;
-    margin-bottom: 8px;
-    font-weight: 600;
-    color: #374151;
-}
-
-.form-group input,
-.form-group select,
-.form-group textarea {
-    width: 100%;
-    padding: 12px 16px;
-    border: 2px solid #e5e7eb;
-    border-radius: 8px;
-    font-size: 16px;
-    transition: border-color 0.3s ease;
-}
-
-.form-group input:focus,
-.form-group select:focus,
-.form-group textarea:focus {
-    outline: none;
-    border-color: #2563EB;
-}
-
-.visa-specialization {
-    background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
-    color: white;
-    padding: 80px 0;
-}
-
-.country-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 20px;
-    margin-top: 40px;
-}
-
-.country-card {
-    background: rgba(255, 255, 255, 0.1);
-    padding: 25px 20px;
-    border-radius: 10px;
-    text-align: center;
-    backdrop-filter: blur(10px);
-    border: 1px solid rgba(255, 255, 255, 0.2);
-    transition: transform 0.3s ease;
-}
-
-.country-card:hover {
-    transform: translateY(-5px);
-}
-
-.success-metrics {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 30px;
-    margin-top: 50px;
-}
-
-.metric-card {
-    text-align: center;
-    padding: 30px 20px;
-}
-
-.metric-number {
-    font-size: 3rem;
-    font-weight: bold;
-    color: #2563EB;
-    display: block;
-    line-height: 1;
-}
-
-.metric-label {
-    color: #6b7280;
-    font-size: 1.1rem;
-    margin-top: 10px;
-}
-
-.visa-testimonial {
-    background: white;
-    padding: 30px;
-    border-radius: 12px;
-    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
-    margin: 20px;
-}
-
-.testimonial-content {
-    font-style: italic;
-    margin-bottom: 20px;
-    color: #4b5563;
-}
-
-.client-info {
-    display: flex;
-    align-items: center;
-    gap: 15px;
-}
-
-.client-avatar {
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-    object-fit: cover;
-}
-
-/* Responsive Design */
-@media (max-width: 768px) {
-    .trust-badges {
-        justify-content: center;
-    }
-    
-    .process-steps {
-        grid-template-columns: 1fr;
-    }
-    
-    .form-grid {
-        grid-template-columns: 1fr;
-    }
-    
-    .visa-assessment-form {
-        padding: 20px;
-    }
-}
-</style>
 
 <!-- ==============================
    NEW VISA-FOCUSED HERO SECTION
 ============================== -->
+    <!-- SPACING OPTIMIZATION - ADD THIS BEFORE </head> -->
+    <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: 'Inter', sans-serif; font-size: 16px; line-height: 1.6; color: #666666; }
+    h1, h2, h3, h4, h5, h6 { font-family: 'Manrope', sans-serif; color: #333333; font-weight: 700; margin-bottom: 15px; }
+    h1 { font-size: 48px; } h2 { font-size: 36px; } h3 { font-size: 28px; }
+    section, .space { padding: 60px 0 !important; }
+    .row { margin-left: -12px !important; margin-right: -12px !important; }
+    .row > * { padding-left: 12px !important; padding-right: 12px !important; }
+    .service-card, .tour-box, .blog-box { margin-bottom: 24px !important; box-shadow: 0 2px 8px rgba(0,0,0,0.08) !important; }
+    .form-control { height: 56px; padding: 0 20px !important; }
+    .th-btn, .btn { padding: 15px 30px !important; }
+    .footer-wrapper { padding: 50px 0 30px !important; }
+    @media (max-width: 768px) { section { padding: 40px 0 !important; } h1 { font-size: 36px; } }
+    </style>
+
 
 </head>
 
@@ -285,7 +93,7 @@
      Preloader
   ==============================-->
     <div id="preloader" class="preloader ">
-        <button class="th-btn preloaderCls">Cancel Preloader </button>
+        <button class="the-btn preloaderCls">Cancel Preloader </button>
         <div class="preloader-inner">
             <img src="assets/img/logo3.svg" alt="">
         </div>
@@ -751,138 +559,222 @@ Hero Area
                 </div>
             </form>
         </div>
-    </div><!--==============================
-
-
-
-
+    </div>
 
 
 
 <!-- Services -->
+<!-- Services Section -->
+<section class="category-area space">
+  <div class="container">
+    <div class="title-area text-center">
+      <span class="sub-title">Complete Travel Solutions</span>
+      <h2 class="sec-title">Our Services</h2>
+    </div>
 
-    <section class="category-area bg-top-center space" data-bg-src="assets/img/bg/category_bg_1.png">
-        <div class="container th-container">
-            <div class="title-area text-center">
-                <span class="sub-title">Complete Travel Solutions</span>
-                <h2 class="sec-title">Our Services</h2>
+    <div class="row g-4">
+
+      <!-- Visa Services -->
+      <div class="col-md-6 col-lg-4">
+        <div class="service-card">
+          <div class="icon-container">
+            <img src="https://img.icons8.com/ios-filled/100/2563EB/visa.png" alt="Visa Services" />
+          </div>
+          <h3 style="font-size: 35px;margin-top: 20px;">Visa Services</h3>
+          <p class="brief">Complete visa application support with expert guidance and document verification.</p>
+                <a href="visa-services.html" class="the-btn"style="margin-top: 20px;">Start Application</a>
+
+          <div class="overlay">
+            <div class="overlay-content">
+              <h3 style="font-size: 35px;margin-top: 20px;">Visa Services</h3>
+              <!-- <p>Complete visa application support with expert guidance and document verification.</p> -->
+              <ul class="highlights">
+                <li>Document Review & Verification</li>
+                <li>Application Form Assistance</li>
+                <li>Appointment Scheduling</li>
+                <li>Interview Preparation</li>
+              </ul>
+              <div class="price-box">
+                <span class="price">Starting from</span>
+                <span class="price">$89</span>
+              </div>
+              <div class="btn-group">
+                <a href="#" class="btn primary">Book Now</a>
+                <a href="visa-services.html" class="btn secondary">Learn More</a>
+              </div>
             </div>
-
-            <div class="row g-4">
-
-                <!-- Visa Services -->
-                <div class="col-md-6 col-lg-4">
-                    <div class="service-card">
-                        <div class="service-icon">
-
-  <img src="https://img.icons8.com/ios-filled/50/2563EB/visa.png" alt="Visa Services" width="24" height="24">
-                   </div>
-                        <h3 class="service-title" style="color:#2563EB; font-size:28px;">Visa Services</h3>
-                        <p class="service-description">
-                            We provide expert document review, application form assistance, appointment scheduling, visa
-                            interview preparation, and status tracking.
-                        </p>
-                        <div class="overlay-buttons">
-                            <a href="#" class="overlay-btn primary">Start Application</a>
-                            <a href="visa-services.html" class="overlay-btn secondary">Learn More</a>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Flight Booking -->
-                <div class="col-md-6 col-lg-4">
-                    <div class="service-card">
-                        <div class="service-icon">
- <img src="https://img.icons8.com/ios-filled/50/2563EB/airplane-take-off.png" alt="Flight Booking" width="24" height="24">                        </div>
-                        <h3 class="service-title" style="color:#2563EB; font-size:28px;">Flight Booking</h3>
-                        <p class="service-description">
-                            We provide a round-trip itinerary with dates, flight numbers and times, passenger details,
-                            reservation/booking ID, and 24-48 hour delivery.
-                        </p>
-                        <div class="overlay-buttons">
-                            <a href="flight-booking.html" class="overlay-btn primary">Book Now</a>
-                            <a href="flight-booking.html" class="overlay-btn secondary">Learn More</a>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Hotel Booking -->
-                <div class="col-md-6 col-lg-4">
-                    <div class="service-card">
-                        <div class="service-icon">
-  <img src="https://img.icons8.com/?size=96&id=12345&format=png" alt="Hotel Booking" width="24" height="24">                        </div>
-                        <h3 class="service-title" style="color:#2563EB; font-size:28px;">Hotel Booking</h3>
-                        <p class="service-description">
-                            We provide the hotel name and address, check-in/check-out dates, booking confirmation ID,
-                            contact information, and 24-48 hour delivery.
-                        </p>
-                        <div class="overlay-buttons">
-                            <a href="hotel-booking.html" class="overlay-btn primary">Find Hotels</a>
-                            <a href="hotel-booking.html" class="overlay-btn secondary">Learn More</a>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Travel Insurance -->
-                <div class="col-md-6 col-lg-4">
-                    <div class="service-card">
-                        <div class="service-icon">
-                            <img src="https://img.icons8.com/?size=100&id=QuZWcbEXnK8e&format=png" alt="Travel Insurance">
-                        </div>
-                        <h3 class="service-title" style="color:#2563EB; font-size:28px;">Travel Insurance</h3>
-                        <p class="service-description">
-                            We provide €30,000+ medical coverage, repatriation coverage, coverage for all Schengen
-                            countries, certificate of insurance, and instant delivery.
-                        </p>
-                        <div class="overlay-buttons">
-                            <a href="travel-insurance.html" class="overlay-btn primary">Get Quote</a>
-                            <a href="travel-insurance.html" class="overlay-btn secondary">Learn More</a>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Holiday Packages -->
-                <div class="col-md-6 col-lg-4">
-                    <div class="service-card">
-                        <div class="service-icon">
-  <img src="https://img.icons8.com/ios-filled/50/2563EB/beach.png" alt="Tour Packages" width="24" height="24">
-                        </div>
-                        <h3 class="service-title" style="color:#2563EB; font-size:28px;">Holiday Packages</h3>
-                        <p class="service-description">
-                            We provide curated European tour packages including sightseeing, transfers, guided tours,
-                            and customized itineraries for a memorable holiday experience.
-                        </p>
-                        <div class="overlay-buttons">
-                            <a href="holiday-packages.html" class="overlay-btn primary">View Packages</a>
-                            <a href="holiday-packages.html" class="overlay-btn secondary">Learn More</a>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Combo Packages -->
-                <div class="col-md-6 col-lg-4">
-                    <div class="service-card position-relative">
-                        <div class="combo-badge">Best Value</div>
-                        <div class="service-icon">
-                            <img src="https://img.icons8.com/color/48/2563EB/suitcase.png" alt="Combo Packages">
-                        </div>
-                        <h3 class="service-title" style="color:#2563EB; font-size:28px;">Combo Packages</h3>
-                        <p class="service-description">
-                            All-in-one packages including visa, flights, hotels, and insurance at special rates.
-                        </p>
-                        <div class="overlay-buttons">
-                            <a href="combo-packages.html" class="overlay-btn primary">View Deals</a>
-                            <a href="combo-packages.html" class="overlay-btn secondary">Learn More</a>
-                        </div>
-                    </div>
-                </div>
-
-            </div>
+          </div>
         </div>
-    </section>
+      </div>
 
+      <!-- Flight Booking -->
+      <div class="col-md-6 col-lg-4">
+        <div class="service-card">
+          <div class="icon-container">
+            <img src="https://img.icons8.com/ios-filled/100/2563EB/airplane-take-off.png" alt="Flight Booking" />
+          </div>
+          <h3 style="font-size: 35px;margin-top: 20px;">Flight Booking</h3>
+          <p class="brief">Book flights with confirmed itineraries for visa applications or travel plans.</p>
+                <a href="visa-services.html" class="the-btn"style="margin-top: 20px;">Find Flight</a>
 
+          <div class="overlay">
+            <div class="overlay-content">
+              <h3 style="font-size: 35px;margin-top: 20px;">Flight Booking</h3>
+              <!-- <p>Book flights with confirmed itineraries for visa applications or travel plans.</p> -->
+              <ul class="highlights">
+                <li>Round-trip Itinerary</li>
+                <li>Flight Details & Times</li>
+                <li>Passenger Information</li>
+                <li>24-48 Hour Delivery</li>
+              </ul>
+              <div class="price-box">
+                <span class="price">Starting from</span>
+                <span class="price">$29</span>
+              </div>
+              <div class="btn-group">
+                <a href="flight-booking.html" class="btn primary">Book Now</a>
+                <a href="flight-booking.html" class="btn secondary">Learn More</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
 
+      <!-- Hotel Booking -->
+      <div class="col-md-6 col-lg-4">
+        <div class="service-card">
+          <div class="icon-container">
+            <img src="https://img.icons8.com/ios-filled/100/2563EB/bed.png" alt="Hotel Booking" />
+          </div>
+          <h3 style="font-size: 35px;margin-top: 20px;">Hotel Booking</h3>
+          <p class="brief">Reserve accommodations with confirmed bookings for your travel needs.</p>
+                <a href="visa-services.html" class="the-btn"style="margin-top: 20px;">Find Hotels</a>
+
+          <div class="overlay">
+            <div class="overlay-content">
+              <h3 style="font-size: 35px;margin-top: 20px;">Hotel Booking</h3>
+              <!-- <p>Reserve accommodations with confirmed bookings for your travel needs.</p> -->
+              <ul class="highlights">
+                <li>Hotel Name & Address</li>
+                <li>Check-in/Check-out Dates</li>
+                <li>Booking Confirmation ID</li>
+                <li>24-48 Hour Delivery</li>
+              </ul>
+              <div class="price-box">
+                <span class="price">Starting from</span>
+                <span class="price">$39</span>
+              </div>
+              <div class="btn-group">
+                <a href="hotel-booking.html" class="btn primary">Book Now</a>
+                <a href="hotel-booking.html" class="btn secondary">Learn More</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Travel Insurance -->
+      <div class="col-md-6 col-lg-4">
+        <div class="service-card">
+          <div class="icon-container">
+            <img src="https://img.icons8.com/ios-filled/100/2563EB/health-insurance.png" alt="Travel Insurance" />
+          </div>
+          <h3 style="font-size: 35px;margin-top: 20px;">Travel Insurance</h3>
+          <p class="brief">Comprehensive travel insurance meeting Schengen visa requirements.</p>
+                <a href="visa-services.html" class="the-btn"style="margin-top: 20px;">Get Quote</a>
+
+          <div class="overlay">
+            <div class="overlay-content">
+              <h3 style="font-size: 35px;margin-top: 20px;">Travel Insurance</h3>
+              <!-- <p>Comprehensive travel insurance meeting Schengen visa requirements.</p> -->
+              <ul class="highlights">
+                <li>€30,000+ Medical Coverage</li>
+                <li>Repatriation Coverage</li>
+                <li>All Schengen Countries</li>
+                <li>Instant Delivery</li>
+              </ul>
+              <div class="price-box">
+                <span class="price">Starting from</span>
+                <span class="price">$25</span>
+              </div>
+              <div class="btn-group">
+                <a href="travel-insurance.html" class="btn primary">Get Quote</a>
+                <a href="travel-insurance.html" class="btn secondary">Learn More</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Holiday Packages -->
+      <div class="col-md-6 col-lg-4">
+        <div class="service-card">
+          <div class="icon-container">
+            <img src="https://img.icons8.com/ios-filled/100/2563EB/beach.png" alt="Holiday Packages" />
+          </div>
+          <h3 style="font-size: 35px;margin-top: 20px;">Holiday Packages</h3>
+          <p class="brief">Curated European tour packages for a memorable holiday experience.</p>
+                <a href="visa-services.html" class="the-btn"style="margin-top: 20px;">View Packages</a>
+
+          <div class="overlay">
+            <div class="overlay-content">
+              <h3 style="font-size: 35px;margin-top: 20px;">Holiday Packages</h3>
+              <!-- <p>Curated European tour packages for a memorable holiday experience.</p> -->
+              <ul class="highlights">
+                <li>Sightseeing & Transfers</li>
+                <li>Guided Tours</li>
+                <li>Customized Itineraries</li>
+                <li>Accommodation Included</li>
+              </ul>
+              <div class="price-box">
+                <span class="price">Starting from</span>
+                <span class="price">$299</span>
+              </div>
+              <div class="btn-group">
+                <a href="holiday-packages.html" class="btn primary">Book Now</a>
+                <a href="holiday-packages.html" class="btn secondary">Learn More</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Combo Packages -->
+      <div class="col-md-6 col-lg-4">
+        <div class="service-card">
+          <div class="icon-container">
+            <img src="https://img.icons8.com/color/100/2563EB/suitcase.png" alt="Combo Packages" />
+          </div>
+          <h3 style="font-size: 35px;margin-top: 5px;">Combo Packages</h3>
+          <p class="brief">All-in-one packages including visa, flights, hotels, and insurance.</p>
+                <a href="visa-services.html" class="the-btn"style="margin-top: 20px;">Get Deals</a>
+
+          <div class="overlay">
+            <div class="overlay-content">
+              <h3 style="font-size: 35px;margin-top: 20px;">Combo Packages</h3>
+              <!-- <p>All-in-one packages including visa, flights, hotels, and insurance.</p> -->
+              <ul class="highlights">
+                <li>Visa Assistance</li>
+                <li>Flight Booking</li>
+                <li>Hotel Reservation</li>
+                <li>Travel Insurance</li>
+              </ul>
+              <div class="price-box">
+                <span class="price">Starting from</span>
+                <span class="price">$399</span>
+              </div>
+              <div class="btn-group">
+                <a href="combo-packages.html" class="btn primary">Book Now</a>
+                <a href="combo-packages.html" class="btn secondary">Learn More</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
 
 
 <!-- ==============================
@@ -906,6 +798,7 @@ Hero Area
                                 <div class="team-content">
                                     <div class="media-body">
                                      
+                                        
                                      <div class="th-social">
                                            <h4>Visa Assessment</h4>
                 <p>Complete our quick assessment form and get personalized visa guidance tailored to your needs.</p>
@@ -926,7 +819,7 @@ Hero Area
                                       
                                         <div class="th-social">
                                            <h4>Document Preparation</h4>
-                <p>Our experts prepare and review all required documents, ensuring 100% compliance</p>
+                <p>Our experts meticulously prepare and review all required documents to guarantee 100% compliance.</p>
                                         </div>
                                     </div>
                                 </div>
@@ -977,238 +870,7 @@ Hero Area
         </div>
     </section> 
 
-    <!-- 
-
-
-    Destination Area  
-==============================--> 
-
-    <!-- <section class="position-relative overflow-hidden space" id="destination-sec" data-bg-src="assets/img/bg/line-pattern3.png">
-        <div class="container">
-            <div class="row justify-content-between">
-                <div class="col-lg-6">
-                    <div class="title-area">
-                        <span class="sub-title">Top Destination</span>
-                        <h2 class="sec-title">Popular Destination</h2>
-                    </div>
-                </div>
-                <div class="col-lg-5">
-                    <h2 class="destination-title"><span class="counter-number">850</span>+ Destinations</h2>
-                    <p class="sec-text mb-30">One of the most well-liked travel companies for people looking to experience
-                        adventure and see the world is Tourm.</p>
-
-                </div>
-            </div>
-            <div class="slider-area">
-                <div class="swiper th-slider has-shadow" data-slider-options='{"breakpoints":{"0":{"slidesPerView":1},"576":{"slidesPerView":"1"},"768":{"slidesPerView":"2"},"992":{"slidesPerView":"2"},"1200":{"slidesPerView":"3"},"1300":{"slidesPerView":"4"}}}'>
-                    <div class="swiper-wrapper">
-                        <div class="swiper-slide">
-                            <div class="destination-item th-ani">
-                                <div class="destination-item_img global-img">
-                                    <img src="assets/img/destination/destination_3_1.jpg" alt="image">
-                                </div>
-                                <div class="destination-content">
-                                    <h3 class="box-title"><a href="destination-details.html">Dubai, UAE</a></h3>
-                                    <p class="destination-text">25 Listing</p>
-                                    <a href="destination-details.html" class="th-btn style4 th-icon">Book Now</a>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="swiper-slide">
-                            <div class="destination-item th-ani">
-                                <div class="destination-item_img global-img">
-                                    <img src="assets/img/destination/destination_3_2.jpg" alt="image">
-                                </div>
-                                <div class="destination-content">
-                                    <h3 class="box-title"><a href="destination-details.html">Japan</a></h3>
-                                    <p class="destination-text">25 Listing</p>
-                                    <a href="destination-details.html" class="th-btn style4 th-icon">Book Now</a>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="swiper-slide">
-                            <div class="destination-item th-ani">
-                                <div class="destination-item_img global-img">
-                                    <img src="assets/img/destination/destination_3_3.jpg" alt="image">
-                                </div>
-                                <div class="destination-content">
-                                    <h3 class="box-title"><a href="destination-details.html">Switzerland</a></h3>
-                                    <p class="destination-text">25 Listing</p>
-                                    <a href="destination-details.html" class="th-btn style4 th-icon">Book Now</a>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="swiper-slide">
-                            <div class="destination-item th-ani">
-                                <div class="destination-item_img global-img">
-                                    <img src="assets/img/destination/destination_3_4.jpg" alt="image">
-                                </div>
-                                <div class="destination-content">
-                                    <h3 class="box-title"><a href="destination-details.html">Brazil</a></h3>
-                                    <p class="destination-text">25 Listing</p>
-                                    <a href="destination-details.html" class="th-btn style4 th-icon">Book Now</a>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="swiper-slide">
-                            <div class="destination-item th-ani">
-                                <div class="destination-item_img global-img">
-                                    <img src="assets/img/destination/destination_3_1.jpg" alt="image">
-                                </div>
-                                <div class="destination-content">
-                                    <h3 class="box-title"><a href="destination-details.html">Dubai, UAE</a></h3>
-                                    <p class="destination-text">25 Listing</p>
-                                    <a href="destination-details.html" class="th-btn style4 th-icon">Book Now</a>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="swiper-slide">
-                            <div class="destination-item th-ani">
-                                <div class="destination-item_img global-img">
-                                    <img src="assets/img/destination/destination_3_2.jpg" alt="image">
-                                </div>
-                                <div class="destination-content">
-                                    <h3 class="box-title"><a href="destination-details.html">Japan</a></h3>
-                                    <p class="destination-text">25 Listing</p>
-                                    <a href="destination-details.html" class="th-btn style4 th-icon">Book Now</a>
-                                </div>
-                            </div>
-                        </div>
-
-                    </div>
-                </div>
-            </div>
-            <div class="destination-btn text-center mt-60">
-                <a href="destination.html" class="th-btn style3 th-icon">View All</a>
-            </div>
-        </div> -->
-    <!-- </section> -->
-    <!--==============================
-Category Area  
-==============================
-    <section class="category-area3 bg-smoke space" data-bg-src="assets/img/bg/line-pattern3.png">
-        <div class="container th-container">
-            <div class="title-area text-center">
-                <span class="sub-title">Wornderful Place For You</span>
-                <h2 class="sec-title">Tour Categories</h2>
-            </div>
-            <div class="slider-area">
-                <div class="swiper th-slider has-shadow category-slider3" id="categorySlider3" data-slider-options='{"breakpoints":{"0":{"slidesPerView":1},"576":{"slidesPerView":"1"},"768":{"slidesPerView":"2"},"992":{"slidesPerView":"3"},"1200":{"slidesPerView":"3"},"1400":{"slidesPerView":"5"}}}'>
-                    <div class="swiper-wrapper">
-                        <div class="swiper-slide">
-                            <div class="category-card single2">
-                                <div class="box-img global-img">
-                                    <img src="assets/img/category/category_1_1.jpg" alt="Image">
-                                </div>
-                                <h3 class="box-title"><a href="destination.html">Cruises</a></h3>
-                                <a class="line-btn" href="destination.html">See more</a>
-                            </div>
-                        </div>
-
-                        <div class="swiper-slide">
-                            <div class="category-card single2">
-                                <div class="box-img global-img">
-                                    <img src="assets/img/category/category_1_2.jpg" alt="Image">
-                                </div>
-                                <h3 class="box-title"><a href="destination.html">Hiking</a></h3>
-                                <a class="line-btn" href="destination.html">See more</a>
-                            </div>
-                        </div>
-
-                        <div class="swiper-slide">
-                            <div class="category-card single2">
-                                <div class="box-img global-img">
-                                    <img src="assets/img/category/category_1_3.jpg" alt="Image">
-                                </div>
-                                <h3 class="box-title"><a href="destination.html">Airbirds</a></h3>
-                                <a class="line-btn" href="destination.html">See more</a>
-                            </div>
-                        </div>
-
-                        <div class="swiper-slide">
-                            <div class="category-card single2">
-                                <div class="box-img global-img">
-                                    <img src="assets/img/category/category_1_4.jpg" alt="Image">
-                                </div>
-                                <h3 class="box-title"><a href="destination.html">Wildlife</a></h3>
-                                <a class="line-btn" href="destination.html">See more</a>
-                            </div>
-                        </div>
-
-                        <div class="swiper-slide">
-                            <div class="category-card single2">
-                                <div class="box-img global-img">
-                                    <img src="assets/img/category/category_1_5.jpg" alt="Image">
-                                </div>
-                                <h3 class="box-title"><a href="destination.html">Walking</a></h3>
-                                <a class="line-btn" href="destination.html">See more</a>
-                            </div>
-                        </div>
-
-                        <div class="swiper-slide">
-                            <div class="category-card single2">
-                                <div class="box-img global-img">
-                                    <img src="assets/img/category/category_1_1.jpg" alt="Image">
-                                </div>
-                                <h3 class="box-title"><a href="destination.html">Cruises</a></h3>
-                                <a class="line-btn" href="destination.html">See more</a>
-                            </div>
-                        </div>
-
-                        <div class="swiper-slide">
-                            <div class="category-card single2">
-                                <div class="box-img global-img">
-                                    <img src="assets/img/category/category_1_2.jpg" alt="Image">
-                                </div>
-                                <h3 class="box-title"><a href="destination.html">Hiking</a></h3>
-                                <a class="line-btn" href="destination.html">See more</a>
-                            </div>
-                        </div>
-
-                        <div class="swiper-slide">
-                            <div class="category-card single2">
-                                <div class="box-img global-img">
-                                    <img src="assets/img/category/category_1_3.jpg" alt="Image">
-                                </div>
-                                <h3 class="box-title"><a href="destination.html">Airbirds</a></h3>
-                                <a class="line-btn" href="destination.html">See more</a>
-                            </div>
-                        </div>
-
-                        <div class="swiper-slide">
-                            <div class="category-card single2">
-                                <div class="box-img global-img">
-                                    <img src="assets/img/category/category_1_4.jpg" alt="Image">
-                                </div>
-                                <h3 class="box-title"><a href="destination.html">Wildlife</a></h3>
-                                <a class="line-btn" href="destination.html">See more</a>
-                            </div>
-                        </div>
-
-                        <div class="swiper-slide">
-                            <div class="category-card single2">
-                                <div class="box-img global-img">
-                                    <img src="assets/img/category/category_1_5.jpg" alt="Image">
-                                </div>
-                                <h3 class="box-title"><a href="destination.html">Walking</a></h3>
-                                <a class="line-btn" href="destination.html">See more</a>
-                            </div>
-                        </div>
-
-
-
-                    </div>
-
-                    <div class="slider-pagination"></div>
-                </div>
-            </div>
-        </div>
-    </section> <!--==============================
+  <!--==============================
 About Area  
 ==============================-->
     <div class="about-area position-relative overflow-hidden space" id="about-sec">
@@ -1233,7 +895,7 @@ About Area
                             <span class="sub-title style1 ">Let's Travel With Peace of Mind</span>
                             <h2 class="sec-title mb-20 pe-xl-5 me-xl-5 heading">Plan Your Trip With us</h2>
                         </div>
-                        <p class="sec-text mb-30 font-size=20px">The stacks of paperwork and documentation involved suck away the joys
+                        <p style="font-size: 23px;">The stacks of paperwork and documentation involved suck away the joys
                             and wonders of visiting new places. Traveling has sadly become more about filling out form
                             after form for visa applications, flight bookings, hotel accommodation, and printing
                             itineraries. And it is high time these tedious procedures were revolutionized!.That's
@@ -2084,82 +1746,9 @@ Service Area
             </div>
         </div>
     </section><!--==============================
-Gallery Area  
-==============================-->
-    <!-- <div class="overflow-hidden space-bottom">
-        <div class="container">
-            <div class="title-area text-center">
-                <span class="sub-title">Make Your Tour More Pleasure</span>
-                <h2 class="sec-title">Recent Gallery</h2>
-            </div>
-            <div class="row gy-24 gx-24 justify-content-center">
-                <div class="col-lg-3">
-                    <div class="gallery-box style2">
-                        <div class="gallery-img global-img">
-                            <a href="assets/img/gallery/gallery_3_1.jpg" class="popup-image">
-                                <div class="icon-btn"><i class="fal fa-magnifying-glass-plus"></i></div>
-                                <img src="assets/img/gallery/gallery_3_1.jpg" alt="gallery image">
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-3">
-                    <div class="gallery-box style2">
-                        <div class="gallery-img global-img">
-                            <a href="assets/img/gallery/gallery_3_2.jpg" class="popup-image">
-                                <div class="icon-btn"><i class="fal fa-magnifying-glass-plus"></i></div>
-                                <img src="assets/img/gallery/gallery_3_2.jpg" alt="gallery image">
-                            </a>
-                        </div>
-                    </div>
-                    <div class="gallery-box style2">
-                        <div class="gallery-img global-img">
-                            <a href="assets/img/gallery/gallery_3_4.jpg" class="popup-image">
-                                <div class="icon-btn"><i class="fal fa-magnifying-glass-plus"></i></div>
-                                <img src="assets/img/gallery/gallery_3_4.jpg" alt="gallery image">
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-6 ">
-                    <div class="gallery-box style2">
-                        <div class="gallery-img global-img">
-                            <a href="assets/img/gallery/gallery_3_3.jpg" class="popup-image">
-                                <div class="icon-btn"><i class="fal fa-magnifying-glass-plus"></i></div>
-                                <img src="assets/img/gallery/gallery_3_3.jpg" alt="gallery image">
-                            </a>
-                        </div>
-                    </div>
-                    <div class="gallery-box-wrapp">
-                        <div class="gallery-box style2">
-                            <div class="gallery-img global-img">
-                                <a href="assets/img/gallery/gallery_3_5.jpg" class="popup-image">
-                                    <div class="icon-btn"><i class="fal fa-magnifying-glass-plus"></i></div>
-                                    <img src="assets/img/gallery/gallery_3_5.jpg" alt="gallery image">
-                                </a>
-                            </div>
-                        </div>
-                        <div class="gallery-box style2">
-                            <div class="gallery-img global-img">
-                                <a href="assets/img/gallery/gallery_3_6.jpg" class="popup-image">
-                                    <div class="icon-btn"><i class="fal fa-magnifying-glass-plus"></i></div>
-                                    <img src="assets/img/gallery/gallery_3_6.jpg" alt="gallery image">
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-
-                </div>
-
-            </div>
-
-        </div>
-    </div> -->
-
-
 
     <!--==============================
-C
+
 Testimonial Area  
 ==============================-->
 
@@ -2466,53 +2055,91 @@ Blog Area
 ==============================-->
 
 
-    <section class="contact-section"
-        style="background: url('assets/img/bg/team_bg_1.png') no-repeat center center / cover; padding: 80px 0;">
+     <section class="contact-section" style="padding: 80px 0;">
         <div class="container">
-            <div class="contact-wrapper" style="display: flex; flex-wrap: wrap; align-items: center; gap: 50px;">
-                <!-- Left content -->
-                <div class="contact-info" style="flex: 1; min-width: 300px; color: #fff;">
-                    <p class="sub-title style1">
-                        We're Here to Help You</p>
-                    <h2 class="sec-title">Plan Your Journey with Ease</h2>
-                    <p style="font-size: 16px; margin-bottom: 45px;">Looking for reliable travel and visa services? Contact us for personalized guidance and hassle-free travel solutions.</p>
-                    <div class="contact-details" style="font-size: 17px;">
-                        <p><img src="https://img.icons8.com/color/48/2563EB/new-post.png" alt="Email" style="width:20px; margin-right:10px;">
-                            E-mail: soluvant***@gmail.com</p>
-                        <p><img src="https://img.icons8.com/color/48/2563EB/phone.png" alt="Phone" style="width:20px; margin-right:10px;">
-                            Phone number: +123 - 456 - 7890</p>
+            <div class="contact-container">
+                <div class="contact-info">
+                    <span class="sub-title style1">We're Here to Help You</span>
+                    <h2  style="font-size: 28px; margin-bottom: 8px;">Plan Your Journey with Ease</h2>
+                    <p style="font-size: 20px; margin-bottom: 8px;">Looking for reliable travel and visa services? Contact us for personalized guidance and hassle-free travel solutions.</p>
+                    
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <img src="https://img.icons8.com/color/48/2563EB/new-post.png" alt="Email">
+                            </div>
+                            <div class="contact-details">
+                                <h4>Email</h4>
+                                <p>info@schengenvisaitinerary.com</p>
+                                <p>support@schengenvisaitinerary.com</p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <img src="https://img.icons8.com/color/48/2563EB/phone.png" alt="Phone">
+                            </div>
+                            <div class="contact-details">
+                                <h4>Phone</h4>
+                                <p>+1 (234) 567-8900</p>
+                                <p>+1 (234) 567-8901</p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <img src="https://img.icons8.com/color/48/2563EB/marker.png" alt="Location">
+                            </div>
+                            <div class="contact-details">
+                                <h4>Office</h4>
+                                <p>123 Travel Street, Suite 101</p>
+                                <p>New York, NY 10001, USA</p>
+                            </div>
+                        </div>
                     </div>
-                </div> <!-- Right form -->
-                <div class="contact-form"
-                    style="flex: 1; min-width: 300px; background: #fff; padding: 30px; border-radius: 12px; box-shadow: 0 10px 30px rgba(0,0,0,0.1);">
+                </div>
+                
+                <div class="contact-form">
                     <form>
-                        <div style="margin-bottom: 20px;"> <label>Name</label> <input type="text"
-                                placeholder="Jane Smith"
-                                style="width:100%; padding:10px; border:1px solid #ccc; border-radius:6px;"> </div>
-                        <div style="margin-bottom: 20px;"> <label>Email</label> <input type="email"
-                                placeholder="jane@framer.com"
-                                style="width:100%; padding:10px; border:1px solid #ccc; border-radius:6px;"> </div>
-                        <div style="margin-bottom: 20px;">  <label>Service Type</label>
-                        <select style="width:100%; padding:10px; border:1px solid #ccc; border-radius:6px;">
-                            <option>Select...</option>
-                            <option>Visa Assistance</option>
-                            <option>Flight Booking</option>
-                              <option>Hotel Booking</option>
-                                <option>Travel Insurance</option>
-                            <option>Tour Packages</option>
-                        </select> </div>
-                        <div style="margin-bottom: 20px;"> <label>Message</label> <textarea
-                                placeholder="Type your message"
-                                style="width:100%; padding:10px; border:1px solid #ccc; border-radius:6px; height:100px;"></textarea>
-                        </div>  <button type="submit" style="background:#007bff; color:#fff; border:none; padding:12px 25px; border-radius:6px; font-weight:600; cursor:pointer; display:flex; align-items:center; gap:8px;">
-                        Get Assistance <span style="display:inline-block;">➔</span>
-                    </button>
+                        <div class="form-group">
+                            <label class="form-label">Full Name</label>
+                            <input type="text" class="form-control" placeholder="Your Name">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label class="form-label">Email Address</label>
+                            <input type="email" class="form-control" placeholder="your.email@example.com">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label class="form-label">Phone Number</label>
+                            <input type="tel" class="form-control" placeholder="+1 (234) 567-8900">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label class="form-label">Service Interest</label>
+                            <select class="form-control">
+                                <option value="">Select a service</option>
+                                <option value="visa">Visa Services</option>
+                                <option value="flight">Flight Itinerary</option>
+                                <option value="hotel">Hotel Booking</option>
+                                <option value="insurance">Travel Insurance</option>
+                                <option value="package">Tour Package</option>
+                                <option value="combo">Combo Package</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label class="form-label">Message</label>
+                            <textarea class="form-control" rows="5" placeholder="How can we help you?"></textarea>
+                        </div>
+                        
+                        <button type="submit" class="overlay-btn primary" style="width: 100%;">Get Assistance</button>
                     </form>
                 </div>
             </div>
         </div>
     </section>
-
     <!--==============================
 	Footer Area
 ==============================-->
@@ -2765,11 +2392,33 @@ modal Area
         </div>
     </div>
 
-    <!--==============================
-    All Js File
-============================== -->
+
     <!-- Jquery -->
-    <!-- Jquery -->
+     <script>
+document.addEventListener("DOMContentLoaded", function () {
+  const section = document.querySelector(".slider-area");
+  const cards = document.querySelectorAll(".th-team");
+
+  const observer = new IntersectionObserver(
+    (entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          cards.forEach((card, index) => {
+            setTimeout(() => {
+              card.classList.add("animate");
+            }, index * 800); // slower delay between each card
+          });
+          observer.unobserve(entry.target);
+        }
+      });
+    },
+    { threshold: 0.3 }
+  );
+
+  observer.observe(section);
+});
+</script>
+
     <script src="assets/js/vendor/jquery-3.6.0.min.js"></script>
     <!-- Swiper Js -->
     <script src="assets/js/swiper-bundle.min.js"></script>
